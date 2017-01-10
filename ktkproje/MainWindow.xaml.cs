@@ -27,7 +27,13 @@ namespace ktkproje
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (txtkad.Text == "mertcan" && txtsifre.Password == "1234")
+            {
+                NavigationWindow win = new NavigationWindow();
+                win.Content = new Page1();
+                win.Show();
+            }
+
         }
     }
 }

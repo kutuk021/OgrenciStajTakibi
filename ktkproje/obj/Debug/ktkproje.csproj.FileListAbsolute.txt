@@ -25,3 +25,6 @@ c:\users\hasan\documents\visual studio 2015\Projects\ktkproje\ktkproje\obj\Debug
 C:\Users\MERTCAN\Desktop\ktkproje\ktkproje\bin\Debug\ktkproje.exe.config
 C:\Users\MERTCAN\Desktop\ktkproje\ktkproje\obj\Debug\ktkproje.exe
 C:\Users\MERTCAN\Desktop\ktkproje\ktkproje\obj\Debug\ktkproje.pdb
+C:\Users\MERTCAN\Desktop\OgrenciStajTakibi\OgrenciStajTakibi\ktkproje\bin\Debug\ktkproje.exe.config
+C:\Users\MERTCAN\Desktop\OgrenciStajTakibi\OgrenciStajTakibi\ktkproje\obj\Debug\ktkproje.exe
+C:\Users\MERTCAN\Desktop\OgrenciStajTakibi\OgrenciStajTakibi\ktkproje\obj\Debug\ktkproje.pdb
