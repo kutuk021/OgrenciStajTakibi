@@ -1,0 +1,38 @@
+﻿<Page x:Class="ktkproje.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ktkproje"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page2">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+                        
+        </Grid.RowDefinitions>
+        <TextBox Name="txtad" Grid.Column="1" Grid.Row="0" Margin="15"></TextBox>
+        <TextBox Name="txtsoyad" Grid.Column="1" Grid.Row="1" Margin="15"></TextBox>
+        <TextBox Name="txtblm" Grid.Column="1" Grid.Row="2" Margin="15"></TextBox>
+        <TextBox Name="txtisyeri" Grid.Column="1" Grid.Row="3" Margin="15"></TextBox>
+        <Button  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Margin="15" Click="Button_Click"> ekleme yap</Button>
+        <Label Grid.Column="0" Margin="15" Background="AliceBlue">Öğrenci Adı
+        </Label>
+        <Label Grid.Column="0" Grid.Row="1" Margin="15" Background="AliceBlue">Öğrenci Soyadı
+        </Label>
+        <Label Grid.Column="0" Grid.Row="2" Margin="15" Background="AliceBlue">Öğrenci Numarası
+        </Label>
+        <Label Grid.Column="0" Grid.Row="3" Margin="15" Background="AliceBlue">Staj yerinin Adı
+        </Label>
+    </Grid>
+</Page>
