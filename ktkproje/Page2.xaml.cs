@@ -21,6 +21,20 @@ namespace ktkproje
     /// </summary>
     public partial class Page2 : Page
     {
-        
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
+        public Page2()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            baglanti.Open();
+            MySqlCommand kitapekle = new MySqlCommand("INSERT INTO ogrenciler(ograd,ogrsoyad,ogrblm,ogrisyeri) values('" + txtad.Text + "','" + txtsoyad.Text + "','" + txtblm.Text + "','" + txtisyeri.Text + "')", baglanti);
+            kitapekle.ExecuteNonQuery();
+            kitapekle.Dispose();
+            baglanti.Close();
+            MessageBox.Show("Ögrenci Eklendi");
+        }
     }
 }
