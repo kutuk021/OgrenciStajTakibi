@@ -26,6 +26,21 @@ namespace ktkproje
         {
             InitializeComponent();
         }
-       
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=test;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationWindow win = new NavigationWindow();
+            win.Content = new Page2();
+            win.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MySqlCommand goster = new MySqlCommand("Select * from ogrenciler where ogrno='" + txtara.Text + "'", baglanti);
+            MySqlDataAdapter ekle = new MySqlDataAdapter(goster);
+            DataTable ta = new DataTable();
+            ekle.Fill(ta);
+            grid.ItemsSource = ta.AsDataView();
+        }
     }
 }
